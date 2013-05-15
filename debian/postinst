@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -d /home/user/ ]
+then
+	if [ ! -d /home/user/.calendar ]
+	then 
+       	    echo "Creating Calendar config directory"
+	    #mkdir /home/user/.calendar
+	fi
+#	chown calendar:calendar /home/user/.calendar
+#	chmod 770 /home/user/.calendar
+else
+	echo "Not setting up calendar directory rights. Probably in Scratchbox"
+fi
